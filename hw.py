@@ -62,7 +62,7 @@ def add_to_column(new_row, column_index, amount):
     if new_row[column_index] is '':
         new_row[column_index] = real_amount
     else:
-        new_row[column_index] += real_amount
+        new_row[column_index] = float(new_row[column_index]) + real_amount
     return new_row
 
 
